@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXML_SupplierRegisterForGivingNewRawMaterialsController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: biolet;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="materialNameTextField" layoutX="202.0" layoutY="61.0" prefHeight="27.0" prefWidth="170.0" promptText="enter" style="-fx-border-color: blue;" />
+            <TextField fx:id="divisionTextField" layoutX="202.0" layoutY="95.0" prefHeight="27.0" prefWidth="170.0" promptText="enter" style="-fx-border-color: blue;" />
+            <Label layoutX="82.0" layoutY="62.0" prefHeight="25.0" prefWidth="110.0" text="Material Name" />
+            <Label layoutX="82.0" layoutY="96.0" prefHeight="25.0" prefWidth="110.0" text="Division" />
+            <Label layoutX="82.0" layoutY="131.0" prefHeight="25.0" prefWidth="110.0" text="District" />
+            <TextField fx:id="districtTextField" layoutX="202.0" layoutY="130.0" prefHeight="27.0" prefWidth="170.0" promptText="enter" style="-fx-border-color: blue;" />
+            <Label layoutX="82.0" layoutY="170.0" prefHeight="26.0" prefWidth="148.0" text="Delivering Duration Month" />
+            <ComboBox fx:id="durationMonthComboBox" layoutX="248.0" layoutY="171.0" prefWidth="150.0" promptText="month" />
+            <TextArea fx:id="descriptionTextArea" layoutX="66.0" layoutY="278.0" prefHeight="134.0" prefWidth="442.0" promptText="Description" style="-fx-border-color: green;" />
+            <DatePicker fx:id="date" layoutX="68.0" layoutY="243.0" promptText="Date" />
+            <Label layoutX="82.0" layoutY="206.0" prefHeight="18.0" prefWidth="116.0" text="Reg No" />
+            <TextField fx:id="regNoTextField" layoutX="202.0" layoutY="203.0" prefHeight="26.0" prefWidth="182.0" promptText="enter" style="-fx-border-color: blue;" />
+            <Label alignment="CENTER" layoutX="188.0" layoutY="22.0" prefHeight="18.0" prefWidth="198.0" style="-fx-background-color: violet;" text="Registration Form" textFill="#3b3e40" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="172.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="65.0" layoutY="14.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="26.0" prefWidth="131.0" text="Submit" />
+            <Button layoutX="477.0" layoutY="53.0" mnemonicParsing="false" onAction="#backButtonOnCLICK" prefHeight="26.0" prefWidth="90.0" text="Back" />
+            <Button layoutX="65.0" layoutY="54.0" mnemonicParsing="false" onAction="#viewRegistrationStatusButtonOnClick" prefHeight="26.0" prefWidth="210.0" text="View Registration Status" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

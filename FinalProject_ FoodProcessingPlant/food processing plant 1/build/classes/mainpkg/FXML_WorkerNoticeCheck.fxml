@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXML_WorkerNoticeCheckController">
+   <children>
+      <Label alignment="CENTER" layoutX="260.0" layoutY="32.0" prefHeight="31.0" prefWidth="172.0" style="-fx-border-color: green;" text="Notice" textFill="#0970c4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="68.0" layoutY="117.0" prefHeight="200.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="dateCol" prefWidth="75.0" text="Date" />
+          <TableColumn fx:id="noticeCol" prefWidth="185.0" text="Notice Subj" />
+            <TableColumn fx:id="noticeTextCol" prefWidth="281.0" text="Notice Text" />
+        </columns>
+      </TableView>
+      <Button layoutX="68.0" layoutY="352.0" mnemonicParsing="false" onAction="#detailedViewofNoticeButtonOnAction" prefHeight="26.0" prefWidth="322.0" text="Detailed View of Notice" />
+      <Button layoutX="559.0" layoutY="429.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="26.0" prefWidth="80.0" text="Back" />
+   </children>
+</AnchorPane>

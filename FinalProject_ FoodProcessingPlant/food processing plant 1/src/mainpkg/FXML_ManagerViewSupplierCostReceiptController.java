@@ -1,0 +1,82 @@
+
+package mainpkg;
+
+import java.io.IOException;
+import java.net.URL;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
+
+
+public class FXML_ManagerViewSupplierCostReceiptController implements Initializable {
+
+    @FXML
+    private TableView<CostReceipt> tableView;
+    @FXML
+    private TableColumn<CostReceipt,String> idColoumn;
+    @FXML
+    private TableColumn<CostReceipt,String> materialNameColoumn;
+    @FXML
+    private TableColumn<CostReceipt,String> quantityColoumn;
+    @FXML
+    private TableColumn<CostReceipt,String> totalCostColoumn;
+    @FXML
+    private TableColumn<CostReceipt,String> dateColoumn;
+
+    /**
+     * Initializes the controller class.
+     */
+    
+    private Manager user;
+
+    public void initData(Manager u) {
+        user = u;
+    }
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        
+        
+        
+        idColoumn.setCellValueFactory(new PropertyValueFactory<CostReceipt, String>("fromID"));
+        materialNameColoumn.setCellValueFactory(new PropertyValueFactory<CostReceipt, String>("materialName"));
+        quantityColoumn.setCellValueFactory(new PropertyValueFactory<CostReceipt, String>("quantity"));
+        totalCostColoumn.setCellValueFactory(new PropertyValueFactory<CostReceipt, String>("totalCost"));
+        dateColoumn.setCellValueFactory(new PropertyValueFactory<CostReceipt, String>(" date"));
+       
+        
+      
+        
+        ArrayList<CostReceipt> cList = CostReceipt.listOfCostReceipt();
+        for (CostReceipt i : cList) {
+               
+                tableView.getItems().add(i);
+            
+        }
+    }    
+
+    @FXML
+    private void backButtonOnClick(ActionEvent event) throws IOException {
+        FXMLLoader loader1 = new FXMLLoader();
+        loader1.setLocation(getClass().getResource("FXML_ManagerHomeScen.fxml"));
+        Parent homeScene1 = loader1.load();
+        Scene homepage1 = new Scene(homeScene1);
+        FXML_ManagerHomeScenController controller1 = loader1.getController();
+        controller1.initData(user);
+        Stage window1 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window1.setScene(homepage1);
+        window1.show();
+        
+    }
+    
+}

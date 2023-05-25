@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXML_SupplierViewSubmittedProblemAnswerController">
+   <children>
+      <Label layoutX="32.0" layoutY="29.0" prefHeight="18.0" prefWidth="77.0" text="Problem No" />
+      <Label layoutX="38.0" layoutY="232.0" prefHeight="18.0" prefWidth="161.0" style="-fx-background-color: VIOLET;" text="Message from Manager" />
+      <TextArea fx:id="problemTextArea" layoutX="38.0" layoutY="100.0" prefHeight="111.0" prefWidth="542.0" />
+      <Label layoutX="38.0" layoutY="72.0" prefHeight="18.0" prefWidth="126.0" style="-fx-background-color: VIOLET;" text="PROBLEM" />
+      <TextArea fx:id="messageTextArea" layoutX="38.0" layoutY="257.0" prefHeight="111.0" prefWidth="542.0" />
+      <Button layoutX="456.0" layoutY="400.0" mnemonicParsing="false" onAction="#backButtonONAction" prefHeight="26.0" prefWidth="113.0" text="Back" />
+      <Label fx:id="updateLabel" layoutX="38.0" layoutY="390.0" prefHeight="26.0" prefWidth="300.0" />
+      <ComboBox fx:id="problemNoComboBox" layoutX="113.0" layoutY="26.0" onAction="#comboBoxOnAction" prefWidth="150.0" />
+   </children>
+</AnchorPane>

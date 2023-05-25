@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="626.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXML_ManagerHomeScenController">
+   <children>
+      <Button layoutX="100.0" layoutY="112.0" mnemonicParsing="false" onAction="#givePaymentUpdatetoSupplierOnClick" prefHeight="42.0" prefWidth="359.0" text="Payment update" />
+      <Button layoutX="100.0" layoutY="185.0" mnemonicParsing="false" onAction="#viewCustomerReviewOnClick" prefHeight="42.0" prefWidth="359.0" text="View Customer Review" />
+      <Button layoutX="100.0" layoutY="258.0" mnemonicParsing="false" onAction="#viewSupplierCostReceiptonClick" prefHeight="42.0" prefWidth="359.0" text="View Supplier Cost Receipt" />
+      <Button layoutX="100.0" layoutY="333.0" mnemonicParsing="false" onAction="#checkandsendMessagesonSupplierrequestButtonOnClick" prefHeight="42.0" prefWidth="359.0" text="Check and send Messages on Supplier request" />
+      <Button layoutX="100.0" layoutY="406.0" mnemonicParsing="false" onAction="#viewSupplierProblemonClick" prefHeight="42.0" prefWidth="359.0" text="Check Supplier Problem" />
+      <Label alignment="CENTER" layoutX="168.0" layoutY="47.0" prefHeight="28.0" prefWidth="215.0" style="-fx-border-color: red;" text="Manager Dashboard" />
+      <Button layoutX="584.0" layoutY="49.0" mnemonicParsing="false" onAction="#onClickLogoutButton" text="Log Out" />
+      <Button layoutX="100.0" layoutY="462.0" mnemonicParsing="false" onAction="#approveSupplierRegisterRequest" prefHeight="42.0" prefWidth="359.0" text="Approve Supplier Register Request" />
+      <Button layoutX="100.0" layoutY="525.0" mnemonicParsing="false" onAction="#incentiveUpdateToSupplier" prefHeight="42.0" prefWidth="359.0" text="Incentive Update To Supplier" />
+   </children>
+</AnchorPane>

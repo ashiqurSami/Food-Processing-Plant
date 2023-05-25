@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXML_HeadHomeSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="222.0" layoutY="25.0" prefHeight="35.0" prefWidth="244.0" style="-fx-background-color: yellow;" text="Head Dashboard" />
+      <Button layoutX="169.0" layoutY="100.0" mnemonicParsing="false" onAction="#viewEmployeeListonAction" prefHeight="51.0" prefWidth="374.0" text="View All Employee List" />
+      <Button layoutX="169.0" layoutY="179.0" mnemonicParsing="false" onAction="#approveWorkerLeaveApplicationonAction" prefHeight="51.0" prefWidth="374.0" text="Approve Worker Leave Application" />
+      <Button layoutX="169.0" layoutY="257.0" mnemonicParsing="false" onAction="#giveNoticeonAction" prefHeight="51.0" prefWidth="374.0" text="Give Notice" />
+      <Button layoutX="169.0" layoutY="331.0" mnemonicParsing="false" onAction="#viewandApproveProductDistributorCandidateonAction" prefHeight="51.0" prefWidth="374.0" text="View and Approve Product Distributor Candidate" />
+      <Button layoutX="607.0" layoutY="27.0" mnemonicParsing="false" onAction="#onClickLogOutButton" prefHeight="31.0" prefWidth="78.0" text="Log out" textFill="#eb0c0c">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="169.0" layoutY="402.0" mnemonicParsing="false" onAction="#checkInventoryButtonOnAction" prefHeight="51.0" prefWidth="374.0" text="Check Inventory" />
+   </children>
+</AnchorPane>
